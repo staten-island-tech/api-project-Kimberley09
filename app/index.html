@@ -1,12 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>MEAL API</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.themealdb.com/images/logo-small.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./CSS/styles.css" rel="stylesheet" />
   </head>
-  <body>
-    <script type="module" src="/main.js"></script>
+
+  <body class="bg-gradient-to-br from-purple-500 via-blue-400 to-pink-500 text-white font-roboto m-0 p-0">
+    <header class="bg-transparent py-8 text-center text-white shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
+      <h1 tabindex="0" class="text-5xl font-bold tracking-wide">MEAL API</h1>
+      <div class="search-container mt-8">
+        <form class="form flex justify-center items-center space-x-4 mt-4">
+          <input
+            type="text"
+            name="name"
+            class="border bg-white text-black border-solid name p-4 text-xl w-80  border-blue-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-500 bg-transparent"
+            placeholder="Search for a meal..."
+            aria-label="API Search Here"
+          />
+          <input
+            type="submit"
+            name="submit"
+            value="Search"
+            class="py-3 px-6 text-lg bg-blue-600 text-white border-none rounded-lg cursor-pointer hover:bg-blue-500 transition duration-300"
+          />
+          <button
+            type="button"
+            class="rounded-xl resetbutton py-3 px-6 text-lg bg-red-600 text-white border-none cursor-pointer hover:bg-red-500 transition duration-300"
+          >
+            Reset
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <div class="heading2 mt-12 text-3xl text-center font-semibold text-yellow-200">
+      <h2 tabindex="0" id="subhead">Discover Delicious Meals</h2>
+    </div>
+
+    <div class="itemcontainer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-8 px-4">
+     
+    </div>
+
+    <script type="module" src="./JS/main.js"></script>
   </body>
 </html>

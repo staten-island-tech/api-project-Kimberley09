@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.card .dropdownMenu {
+  margin-top: 1rem;
+}
+
+.card .dropdownMenu summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card .dropdownMenu p {
+  font-size: 0.875rem;
+  color: #6B7280;
+}
